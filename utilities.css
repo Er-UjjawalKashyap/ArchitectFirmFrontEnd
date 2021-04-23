@@ -33,19 +33,20 @@
 }
 
 :root {
-    --primary: #7fffd4;
-    --secondery: #6f00ff;
-    --ternary: #51e2f5;
-    --dark: #161616;
-    --light: #ffffff;
+	--primary: #7fffd4;
+	--secondery: #6f00ff;
+	--ternary: #51e2f5;
+	--dark: #161616;
+	--light: #ffffff;
+	--yello: #fee715ff;
 }
 
 @font-face {
-    font-family: fancy;
-    src: url(fonts/NeonAbsoluteSans.ttf);
+	font-family: fancy;
+	src: url(fonts/NeonAbsoluteSans.ttf);
 }
 
 @font-face {
-    font-family: pop;
-    src: url(fonts/Poppins-Regular.ttf);
+	font-family: pop;
+	src: url(fonts/Poppins-Regular.ttf);
 }

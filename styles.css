@@ -5,25 +5,69 @@
     margin: 0px;
 }
 
+/*     Layout  Design Using Grid      */
 
-header {
+header .container {
     height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(to right, rgba(35, 7, 77, 0.7), rgba(106, 41, 212, 0.9)), url(images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* Layout For Its Child */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 75%, 0 100%);
 }
 
-.nav_div {
-    min-height: 10%;
-    max-height: 15%;
+header .container .nav_div {
+    grid-row: 1/2;
+    grid-column: 1/-1;
 }
 
-.nav_div nav ul li {
-    float: right;
+header .titel_img_div {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    /* Layout For Its Child */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+header .titel_img_div .img_div {
+    grid-row: 1/-1;
+    grid-column: 1/2;
+}
+
+header .titel_img_div .welcome_div {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    /* Layout For Its Child */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+}
+
+header .welcome_div .heading {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+header .welcome_div .login_btn {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+}
+
+/*        Setting  Property  Of Elements        */
+
+header .container .nav_div nav ul li {
     list-style-type: none;
-    margin: 2rem 4rem;
+}
+
+header .container .nav_div nav ul li a {
+    position: relative;
+    left: 85%;
+    top: 3rem;
     padding: 2px 10px;
     background-color: transparent;
     border: 2px groove var(--primary);
@@ -31,20 +75,19 @@ header {
     text-align: center;
     width: 100px;
     cursor: pointer;
-}
-
-.nav_div nav ul li a {
     text-decoration: none;
     color: var(--light);
     font-family: pop;
+    display: block;
 }
 
-.nav_div nav ul li:hover {
-    float: right;
-    list-style-type: none;
-    margin: 2rem 4rem;
+header .container .nav_div nav ul li a:hover {
+    position: relative;
+    left: 85%;
+    top: 3rem;
     padding: 2px 10px;
     background-color: var(--ternary);
+    color: var(--dark);
     border: 2px groove var(--light);
     border-radius: 30px;
     text-align: center;
@@ -53,46 +96,38 @@ header {
     transition: all .3s ease;
 }
 
-header .titel_img_div {
-    width: 100%;
-}
-
-.img_div {
-    width: 50%;
-    float: left;
-}
-
 header .titel_img_div .img_div img {
-    margin-top: 0px;
-    margin-left: 30%;
-    width: 800px;
-    height: 700px;
+    height: 80%;
+    position: relative;
+    left: 55%;
+    z-index: -1;
 }
 
-header .welcome_div {
-    float: left;
-    width: 50%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-header .welcome_div h1 {
-    color: var(--light);
-    font-family: fancy;
+header .titel_img_div .welcome_div .heading h1 {
+    margin-top: 15%;
     font-size: 4rem;
-}
-
-header .welcome_div span.sub_heading {
     font-family: fancy;
-    margin-right: 100px;
-    float: right;
     color: var(--light);
 }
 
-header .login_btn ul li {
-    float: left;
+header .titel_img_div .welcome_div .heading h6 {
+    font-size: 1rem;
+    font-family: fancy;
+    color: var(--light);
+    float: right;
+    margin-right: 10%;
+}
+
+header .titel_img_div .welcome_div .login_btn ul li {
     list-style-type: none;
-    margin: 2rem 4rem;
+}
+
+header .titel_img_div .welcome_div .login_btn ul li a {
+    text-decoration: none;
+    color: var(--light);
+    font-family: pop;
+    display: block;
+    margin: 4rem 5rem;
     padding: 5px;
     background-color: transparent;
     border: 2px groove var(--primary);
@@ -102,18 +137,12 @@ header .login_btn ul li {
     cursor: pointer;
 }
 
-header .login_btn ul li a {
-    text-decoration: none;
-    color: var(--light);
-    font-family: pop;
-}
-
-header .login_btn ul li:hover {
-    float: left;
+header .titel_img_div .welcome_div .login_btn ul li a:hover {
     list-style-type: none;
-    margin: 2rem 4rem;
+    margin: 4rem 5rem;
     padding: 5px;
     background-color: var(--ternary);
+    color: var(--dark);
     border: 2px groove var(--light);
     border-radius: 30px;
     text-align: center;
