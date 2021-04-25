@@ -1,0 +1,59 @@
+@import 'utilities.css';
+.parent-div {
+    width: 100%;
+    height: 100%;
+    background-color: var(--yello);
+    position: relative;
+}
+
+.child-div {
+    width: 370px;
+    height: 225px;
+    background-color: var(--dark);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 4px 5px 5px var(--dark);
+}
+
+.image-div {
+    width: 200px;
+    height: 300px;
+    background-color:var(--light);
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    transform: translate(1%,-70%);
+}
+body {
+    background-color: var(--light);
+}
+.head_style
+{
+    margin-left: 20%;
+    font-family: fancy;
+    font-size: 25px;
+    color: var(--light);
+}
+.form_style
+{
+    margin-left: 10%;
+    font-family: pop;
+}
+.form_text
+{
+    color: var(--light);
+}
+.btn_login
+{
+    margin-left: 25%;
+    background-color: var(--light);
+}
+.input_box {
+	padding: 0.2rem .5rem;
+	font-size: 15px;
+	font-weight: 600;
+	border: 2px solid transparent;
+	border-radius: 50px 50px;
+}
