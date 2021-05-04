@@ -1,0 +1,45 @@
+@import 'utilities.css';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(253, 253, 253, 0.671), rgba(81,226,245,0.9)), url(images/bg.jpg);
+    font-family: pop;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img_div img {
+    height:200px;
+    width: 200px;
+    position : absolute;
+    margin-left: 30%;
+    margin-top: 5%;
+    
+}
+
+.CustomerLoginForm{
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.493);
+    background-image: linear-gradient(to right, rgba(253, 253, 253, 0.671), rgba(81,226,245,0.9)), url(images/bg.jpg);
+    padding: 60px;
+    text-align: center;
+    position : absolute ;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50% -50%);
+    
+    
+
+}
+
+.CustomerLoginForm h1{
+    font-family: pop;
+}

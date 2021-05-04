@@ -8,19 +8,6 @@
 	border-radius: 50px 50px;
 }
 
-.btn:hover {
-	padding: 0.3rem 3rem;
-	font-size: 1rem;
-	font-weight: 600;
-	color: var(--light);
-	background-color:var(--ternary);
-	border: 2px solid transparent;
-	outline: none;
-	cursor: pointer;
-	border-radius: 50px 50px;
-	transition: all .3s ease;
-}
-
 .btn-primary {
 	background: var(--primary);
 	color: var(--secondery);
