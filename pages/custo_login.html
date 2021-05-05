@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Customer Login</title>
-        <link rel="stylesheet" href="CustomerLogin.css">
-    </head>
-    
-    <body>
-        <div class="Customer Login">
-            <h1>Customer Login</h1>
-            <form>
-            
-                <p> Coustmer ID : </p>
-                <input type=" Customer Id " class="input-box" placeholder="Enter Your Customer Id"> <br>
-                <p> Password : </p>
-                <input type=" Password " class="input-box" placeholder="Enter Your Password"> <br>
-                <p>I agree to the term of services</p>
-            </form>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/custo_login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="img_div">
+
+            <img src="../images/lady.svg" alt="Lady_Image" />
+
         </div>
-    </body>
+
+        <div class="form_div">
+
+            <div class="form_container">
+
+                <h1>Customer Login</h1>
+
+                <form method="POST" action="customer_login">
+
+                    <p> Username </p>
+
+                    <input type="text" class="input-box" name="username" placeholder="Enter Username"> <br>
+
+                    <p> Password </p>
+
+                    <input type="password" class="input-box" name="password" placeholder="Enter Password"> <br>
+
+                    <button type="submit" class="btn btn_login"> Login </button> <br>
+                    <br>
+
+                    <p class="para">Password ? <a href="forgot_password.html"> Click here ! </a> </p>
+
+                    <br>
+                    <p class="para">Don't have an account ? <a href="create_account.html">Click here !</a></p>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>

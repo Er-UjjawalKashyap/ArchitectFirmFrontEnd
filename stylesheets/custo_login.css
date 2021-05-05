@@ -1,5 +1,4 @@
 @import '../utilities.css';
-
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +7,7 @@
 }
 
 .wrapper {
-    background-image: linear-gradient(to right, rgba(253, 253, 253, 0.671), rgba(81, 226, 245, 0.9)), url(../images/bg.jpg);
+    background-image: linear-gradient(to right, rgba(253, 253, 253, 0.4), rgba(81, 226, 245, 0.9)), url(../images/bg.jpg);
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -21,12 +20,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-5%, -50%);
+    transform: translate(-10%, -50%);
 }
 
 .form_div {
-    height: 50rem;
-    width: 30rem;
+    height: 700px;
+    width: 400px;
     border-radius: 10px 10px;
     background-image: linear-gradient(to right, rgba(253, 253, 253, 0.671), rgba(81, 226, 245, 0.9)), url(../images/bg.jpg);
     box-shadow: inset 5px 5px 5px 5px;
