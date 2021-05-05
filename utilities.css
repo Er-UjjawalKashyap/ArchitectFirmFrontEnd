@@ -33,7 +33,7 @@
 }
 
 :root {
-	--primary: #7fffd4;
+	--primary: rgb(0, 161, 228);
 	--secondery: #6f00ff;
 	--ternary: #51e2f5;
 	--dark: #161616;
