@@ -1,5 +1,4 @@
-@import 'utilities.css';
-
+@import '../utilities.css';
 * {
     box-sizing: boder-box;
     padding: 0px;
@@ -10,7 +9,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(254, 231, 21, 0.8)), url(images/bg.jpg);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(254, 231, 21, 0.8)), url(../images/bg.jpg);
 }
 
 .child-div {

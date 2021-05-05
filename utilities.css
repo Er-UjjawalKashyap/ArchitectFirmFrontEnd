@@ -19,30 +19,6 @@
 	border-radius: 50px 50px;
 }
 
-.btn-primary {
-	background: var(--primary);
-	color: var(--secondery);
-}
-
-.btn-primary:hover {
-	background: transparent;
-	border-color: var(--primary);
-	color: var(--light);
-	transition: all .3s ease;
-}
-
-.btn-secondery {
-	background: transparent;
-	color: var(--primary);
-	border-color: var(--primary);
-}
-
-.btn-secondery:hover {
-	background: var(--primary);
-	color: var(--secondery);
-	border-color: var(--primary);
-}
-
 :root {
 	--primary: #3a4660;
 	--secondery: #6f00ff;
