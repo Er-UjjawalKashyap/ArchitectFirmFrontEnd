@@ -1,6 +1,6 @@
 @import 'utilities.css';
 * {
-    box-sizing: boder-box;
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -65,15 +65,16 @@ header .container .nav_div nav ul li {
 }
 
 header .container .nav_div nav ul li a {
-    position: relative;
-    left: 85%;
-    top: 3rem;
-    padding: 2px 10px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    padding: 2px 40px;
     background-color: transparent;
     border: 2px groove var(--ternary);
     border-radius: 30px;
+    font-size: 1.5vh;
     text-align: center;
-    width: 100px;
+    /* width: 8%; */
     cursor: pointer;
     text-decoration: none;
     color: var(--light);
@@ -82,40 +83,42 @@ header .container .nav_div nav ul li a {
 }
 
 header .container .nav_div nav ul li a:hover {
-    position: relative;
-    left: 85%;
-    top: 3rem;
-    padding: 2px 10px;
     background-color: var(--ternary);
     color: var(--dark);
     border: 2px groove var(--light);
     border-radius: 30px;
+    font-size: 1.5vh;
     text-align: center;
-    width: 100px;
     cursor: pointer;
     transition: all .3s ease;
 }
 
 header .titel_img_div .img_div img {
-    height: 80%;
-    position: relative;
-    left: 55%;
+    height: 60vh;
+    width: 60vw;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    transform: translate(-70%, -50%);
     z-index: -1;
 }
 
 header .titel_img_div .welcome_div .heading h1 {
-    margin-top: 15%;
-    font-size: 4rem;
+    font-size: 3vw;
     font-family: fancy;
     color: var(--light);
+    position: absolute;
+    top: 20%;
+    right: 10%;
 }
 
 header .titel_img_div .welcome_div .heading h6 {
-    font-size: 1rem;
+    font-size: 1vw;
     font-family: fancy;
     color: var(--light);
-    float: right;
-    margin-right: 10%;
+    position: absolute;
+    top: 28%;
+    right: 10%;
 }
 
 header .titel_img_div .welcome_div .login_btn ul li {
@@ -127,26 +130,27 @@ header .titel_img_div .welcome_div .login_btn ul li a {
     color: var(--light);
     font-family: pop;
     display: block;
-    margin: 4rem 5rem;
+    margin: 10px 0px;
     padding: 5px;
     background-color: transparent;
     border: 2px groove var(--ternary);
     border-radius: 30px;
+    font-size: 1.5vh;
     text-align: center;
-    width: 500px;
+    width: 35vw;
     cursor: pointer;
 }
 
 header .titel_img_div .welcome_div .login_btn ul li a:hover {
     list-style-type: none;
-    margin: 4rem 5rem;
+    margin: 10px 0px;
     padding: 5px;
     background-color: var(--ternary);
     color: var(--dark);
     border: 2px groove var(--light);
     border-radius: 30px;
     text-align: center;
-    width: 500px;
+    width: 35vw;
     cursor: pointer;
     transition: all .3s ease;
 }
