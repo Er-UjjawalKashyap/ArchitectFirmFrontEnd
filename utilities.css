@@ -8,6 +8,17 @@
 	border-radius: 50px 50px;
 }
 
+.btn:hover {
+	padding: 0.3rem 3rem;
+	font-size: 1rem;
+	font-weight: 600;
+	background-color: var(--yello);
+	border: 2px solid var(--light);
+	outline: none;
+	cursor: pointer;
+	border-radius: 50px 50px;
+}
+
 .btn-primary {
 	background: var(--primary);
 	color: var(--secondery);
@@ -33,7 +44,7 @@
 }
 
 :root {
-	--primary: rgb(0, 161, 228);
+	--primary: #3a4660;
 	--secondery: #6f00ff;
 	--ternary: #51e2f5;
 	--dark: #161616;
