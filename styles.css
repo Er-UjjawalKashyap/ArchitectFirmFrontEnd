@@ -154,3 +154,75 @@ header .titel_img_div .welcome_div .login_btn ul li a:hover {
     cursor: pointer;
     transition: all .3s ease;
 }
+
+@media only screen and (max-width: 600px) {
+    header .container {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to right, rgba(35, 7, 77, 0.7), rgba(106, 41, 212, 0.9)), url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+    }
+    header .titel_img_div .img_div img {
+        height: 40vh;
+        width: 40vw;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-70%, -50%);
+        z-index: -1;
+    }
+    header .titel_img_div .welcome_div .heading h1 {
+        font-size: 3vw;
+        font-family: fancy;
+        color: var(--light);
+        position: absolute;
+        top: 25%;
+        right: 10%;
+    }
+    header .titel_img_div .welcome_div .heading h6 {
+        font-size: 1.5vw;
+        font-family: fancy;
+        color: var(--light);
+        position: absolute;
+        top: 28%;
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header .container {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to right, rgba(35, 7, 77, 0.7), rgba(106, 41, 212, 0.9)), url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+    }
+    header .titel_img_div .img_div img {
+        height: 40vh;
+        width: 40vw;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-70%, -50%);
+        z-index: -1;
+    }
+    header .titel_img_div .welcome_div .heading h1 {
+        font-size: 3vw;
+        font-family: fancy;
+        color: var(--light);
+        position: absolute;
+        top: 25%;
+        right: 10%;
+    }
+    header .titel_img_div .welcome_div .heading h6 {
+        font-size: 1.5vw;
+        font-family: fancy;
+        color: var(--light);
+        position: absolute;
+        top: 28%;
+        right: 10%;
+    }
+}
