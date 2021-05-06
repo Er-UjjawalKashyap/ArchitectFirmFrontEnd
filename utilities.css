@@ -38,3 +38,16 @@
 	font-family: pop;
 	src: url(fonts/Poppins-Regular.ttf);
 }
+
+@media only screen and (max-width: 600px) {
+	.btn {
+		padding: 0.1rem 1.5rem;
+		font-size: 0.9rem;
+		font-weight: 300;
+	}
+	.btn:hover {
+		padding: 0.1rem 1.5rem;
+		font-size: 0.9rem;
+		font-weight: 300;
+	}
+}
